@@ -34,7 +34,7 @@
 	<div class="carousel-inner relative overflow-hidden w-full">
 	  <!--Slide 1-->
 		<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+		<div class="carousel-item absolute opacity-0" style="height:40vh;">
 			<div class="block h-full w-full bg-gray-300  bg-gray-300">
 				<img style="top: 50%; transform: translateY(-50%);" class="absolute w-full h-auto" src="{{asset('img/slides/slide_home.jpg')}}">
 			</div>
@@ -44,7 +44,7 @@
 		
 		<!--Slide 2-->
 		<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+		<div class="carousel-item absolute opacity-0" style="height:40vh;">
 			<div class="block h-full w-full bg-gray-300">
 				<img style="top: 50%; transform: translateY(-50%);" class="absolute w-full h-auto" src="{{asset('img/slides/slide_municipal.jpg')}}">
 			</div>
@@ -54,7 +54,7 @@
 		
 		<!--Slide 3-->
 		<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-		<div class="carousel-item absolute opacity-0" style="height:50vh;">
+		<div class="carousel-item absolute opacity-0" style="height:40vh;">
 			<div class="block h-full w-full bg-gray-300">
 				<img style="top: 50%; transform: translateY(-50%);" class="absolute w-full h-auto" src="{{asset('img/slides/slide_special.jpg')}}">
 			</div>
