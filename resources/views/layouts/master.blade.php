@@ -20,7 +20,7 @@
         		</div>
             	@include('layouts.partials.left_menu')
         	</div>
-            <div class="w-full lg:w-4/5 p-9 mt-6 lg:mt-0 h-screen text-gray-900 leading-normal bg-white">
+            <div class="w-full lg:w-4/5 p-9 mt-6 lg:mt-0 min-h-screen text-gray-900 leading-normal bg-white mb-9">
             	@include('layouts.partials.content_header')
             	@yield('content')
         	</div>

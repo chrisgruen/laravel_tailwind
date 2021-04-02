@@ -1,4 +1,4 @@
-<footer class="w-full z-10 bottom-0 bg-gray-600 py-2">
+<footer class="fixed w-full z-10 bottom-0 bg-gray-600 py-2">
 	<nav class="lg:container lg:mx-auto mt-0 ">
         <ul class="list-none flex justify-around text-white justify-evenly">
             <li class="inline-block"><a href="{{ route('content',["pageContent"=>"faq"]) }}" class="no-underline hover:underline">@lang('messages.faq')</a></li>
