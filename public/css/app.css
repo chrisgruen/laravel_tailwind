@@ -1,10 +1,13 @@
-.margin-fixfooter {
-  margin-bottom: 5rem !important;
-}
-
 .text-3xl {
   font-size: 1.6rem !important;
   line-height: 2rem !important;
+}
+
+.content-header {
+  height: 3.3em;
+  border-bottom: 1px solid #e3000b;
+  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
 }
 /*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
 

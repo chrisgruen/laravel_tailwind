@@ -1,10 +1,10 @@
-@extends('layouts.master')
+@extends('layouts.start')
 @section('title', 'Startseite')
 @section('header_pagetitle', 'Startseite')
 
 @section('content')
 <div>
-	@include('content.partials.start_slider_top')
+
 </div>
 @endsection
 
