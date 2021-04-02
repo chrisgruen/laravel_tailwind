@@ -18,26 +18,23 @@
     {{--
         @include('partials.'.App::getLocale().'.registrationIntro')
 	--}}
-		<div class="card-w-full">
-			<div class="relative flex flex-col content-center min-w-0 rounded break-words border bg-white border-1 border-gray-300">
-				<div class="py-3 px-6 mb-0 bg-gray-100 border-b-1 border-gray-300 text-gray-900 uppercase">@lang('messages.privateOrBusiness')</div>
-				<div class="flex-auto p-6">
-					<p>@lang('messages.regQuestionCompany')</p>
-                    <div class="relative inline-flex align-middle float-right mt-4" role="group" aria-label="split" id="ct-form">
-                        <button type="button" id="ct-private" data-ct="private" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-no-border">
-                            @lang('messages.private')
-                        </button> &nbsp;&nbsp;
-                        <button type="button" id="ct-company" data-ct="company" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-no-border">
-                            @lang('messages.company' )
-                        </button>
-                    </div>
-				</div>
-			</div>			
-		</div>
+	<div class="card-w-full">
+		<div class="relative flex flex-col content-center min-w-0 break-words">
+			<div class="py-3 px-6 mb-0 bg-gray-100 text-gray-900 uppercase">@lang('messages.privateOrBusiness')</div>
+			<div class="flex-auto p-6 border-r border-l border-b">
+				<p>@lang('messages.regQuestionCompany')</p>
+                <div class="relative inline-flex align-middle float-right mt-4" role="group" aria-label="split" id="ct-form">
+                    <button type="button" id="ct-private" data-ct="private" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-no-border">
+                        @lang('messages.private')
+                    </button> &nbsp;&nbsp;
+                    <button type="button" id="ct-company" data-ct="company" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline btn-no-border">
+                        @lang('messages.company' )
+                    </button>
+                </div>
+			</div>
+		</div>			
+	</div>
         
-        
-        
-
     <form action="{{ route('register') }}" id="inputForm" method="post">
         <input type="hidden" name="customerType" value="0" id="customerType">
         <div class="flex flex-wrap  hidden mt-5" id="user_details">

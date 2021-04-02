@@ -12,11 +12,11 @@
         </div>
     @endif
 
-    <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300">
-        <div class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900 uppercase">{{ __('Reset Password') }}</div>
-
-        <div class="flex-auto p-6 no-border-top">
-
+    <div class="relative flex flex-col min-w-0 rounded break-words bg-white">
+        <div class="py-3 px-6 mb-0 bg-gray-100  text-gray-900 uppercase">
+        	{{ __('Reset Password') }}
+    	</div>
+        <div class="flex-auto p-6 border-r border-l border-b">
             <form method="POST" action="{{ route('password.reset') }}" novalidate>
                 @csrf
 

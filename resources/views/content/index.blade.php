@@ -4,7 +4,7 @@
 
 @section('content')
 <div>
-	<h2>Hallo tailwind</h2>
+	@include('content.partials.start_slider_top')
 </div>
 @endsection
 

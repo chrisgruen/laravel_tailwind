@@ -12,12 +12,16 @@
 
     @stack('css')
 </head>
-	<body>
+	<body class="bg-gray-100 tracking-wider tracking-normal pt-0">
         @include('layouts.partials.header_start')
         
-        <div class="grid lg:container lg:mx-auto lg:grid-cols-4 px-4 gap-3">
-            <div class="lg:col-span-1 p-2">@include('layouts.partials.left_menu_start')</div>
-            <div class="lg:col-span-3 p-2">@yield('content')</div>
+        <div class="container w-full flex flex-wrap mx-auto px-2 pt-0">
+            <div class="w-full lg:w-1/5 lg:px-6 text-xl pt-8 text-gray-800 leading-normal">
+            	@include('layouts.partials.left_menu')
+        	</div>
+            <div class="w-full lg:w-4/5 p-9 mt-6 lg:mt-0 h-screen text-gray-900 leading-normal bg-white">
+            	@yield('content')
+        	</div>
         </div>
         @yield('subsection_2')
         @yield('subsection_3')

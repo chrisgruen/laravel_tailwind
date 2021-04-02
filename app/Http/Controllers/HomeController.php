@@ -23,9 +23,7 @@ class HomeController extends Controller
     
     public function index()
     {
-        //event(new RealTimeMessage('Hello World'));
-        //return view('welcome');
-        return view('start');
+        return view('content.index');
     }
     
     public function content($pageContent)

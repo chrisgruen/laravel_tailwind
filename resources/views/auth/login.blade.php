@@ -15,9 +15,9 @@
         </div>
     </div>
 
-    <div class="relative flex flex-col min-w-0 break-words bg-white border border-1 border-gray-300">
-        <div class="py-3 px-6 mb-0 bg-gray-100 border-b-1 border-gray-300 text-gray-900 uppercase">@lang('messages.pleaseLogIn')</div>
-        <div class="flex-auto p-6 no-border-top">
+    <div class="relative flex flex-col min-w-0 break-words bg-white">
+        <div class="py-3 px-6 mb-0 bg-gray-100 text-gray-900 uppercase">@lang('messages.pleaseLogIn')</div>
+        <div class="flex-auto p-6 border-r border-l border-b">
             <form id="loginForm" action="{{ isset($url) ? $url : route('login')}}" method="post">
                 @component('components.inputs.fg_email',["notempty"=>"true", "notemptyMessage"=>trans('messages.dataFvEmail'), "form_group_row"=>true, "form_layout_center" => true])email @endcomponent
                 @component('components.inputs.fg_password',["notempty"=>"true", "notemptyMessage"=>trans('messages.pleaseEnterPassword'), "form_group_row"=>true, "form_layout_center" => true])password @endcomponent
