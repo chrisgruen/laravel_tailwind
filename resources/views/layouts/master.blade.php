@@ -15,7 +15,7 @@
 	<body class="bg-gray-100 tracking-wider tracking-normal pt-0">        
         <div class="container w-full flex flex-wrap mx-auto px-2 pt-0">
             <div class="w-full lg:w-1/5 lg:px-6 text-xl pt-5 text-gray-800 leading-normal">
-            	<div class="mb-5">
+            	<div class="mb-9">
             		<a class="inline-block pl-3" href="{{ url('/')}}"><img alt="Brand" src="/img/logos/logo_staatsimmobilien.svg"></a>
         		</div>
             	@include('layouts.partials.left_menu')
@@ -33,8 +33,5 @@
     	<script type="text/javascript" src="{{asset('js/app.js')}}"></script>
     	
     	@stack('scripts')
-        <script>
-        
-        </script>
 	</body>
 </html>
